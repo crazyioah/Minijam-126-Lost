@@ -73,6 +73,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 3/z_index = 0
 
 [sub_resource type="TileSet" id=3]
+resource_local_to_scene = true
 0/name = "Lost Tiles.png 0"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
@@ -107,6 +108,6 @@ format = 1
 position = Vector2( 447, 256 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 2.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
